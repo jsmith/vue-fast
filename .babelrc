@@ -1,0 +1,26 @@
+{
+  "presets": [
+    // '@vue/cli-plugin-babel/preset',
+    "@babel/preset-typescript"
+    // "@vue/babel-preset-app"
+  ],
+  "plugins": [
+    // [
+    //   "root-import",
+    //   {
+    //     "rootPathSuffix": "src/",
+    //     "rootPathPrefix": "@/"
+    //   }
+    // ],
+    "snowpack/assets/babel-plugin.js",
+    [
+      "module-resolver", 
+      {
+        "root": ["."],
+        "alias": {
+          "vue": "/web_modules/vue/dist/vue.esm-browser.js"
+        }
+      }
+    ]
+  ]
+}
