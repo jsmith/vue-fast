@@ -35,3 +35,10 @@ npx servor --reload
 2. You cannot use `.vue` files ATM. There are solutions out there but they're not simple. Snowpack is currently looking for someone to write a "short guide for authoring .vue SFC’s and then compiling them to valid JS".
 3. We still use babel. I think this would be hard to get rid of given our use of TypeScript and module aliasing. A faster alternative is [sucrase](https://github.com/alangpierce/sucrase) which is an "alternative to Babel that allows super-fast development builds".
 4. As you cannot use `.vue` files and you cannot import `css` files, all must import css as you normally would in a website (ie. using a `style` block). Luckily, one can easily use [Tailwind](https://tailwindcss.com/) to style components (more information [here](https://www.snowpack.dev/#tailwind-css)).
+
+## References
+Use watchman to run go-tspath and then sucrase. Output to lib. Run the servor app. Voila. Maybe try to run Electron too.
+
+- https://github.com/joseluisq/go-tspath
+- https://github.com/remy/nodemon/blob/master/doc/events.md#states
+- https://github.com/remy/nodemon/issues/1383

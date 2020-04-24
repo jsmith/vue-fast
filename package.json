@@ -14,8 +14,10 @@
     "@babel/preset-typescript": "^7.9.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-root-import": "^6.5.0",
+    "nodemon": "^2.0.3",
     "servor": "^3.2.0",
     "snowpack": "^1.7.0",
+    "sucrase": "^3.13.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
